@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!--media query-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media_query.css">
+    
+    
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!--bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!--javascript-->
+    <script src="./assets/js/script.js" defer ></script>
+
+    <!--favourite icon-->
+    <link rel="icon" href="./assets/img//html_img/favicon.svg" >
+    
+    <title>html-css-spotify</title>
+</head>
+<body class="">
+
+    <main id="site_main">
+
+        <section id="main_sidebar" class="col-xs-1_2 col-s-4_5 col-md-3 col-lg-2" >
+            <div class="row flex-column  justify-content-between">
+                <div class="main_sidebar_top d-flex flex-column">
+                   
+                    <div class="spotify col-12">
+                    <i class="col-12 col bi bi-spotify"></i>
+                    <p class="col">Spotify<sup>&copy;</sup></p>
+                   </div>
+
+                   <div class="home col-12">
+                    <i class="col-12 col fa fa-home" aria-hidden="true"></i>
+                    <p class="col">Home</p>
+                   </div>
+
+                   <div class="cerca col-12">
+                    <i class="col-12 col fa fa-search" aria-hidden="true"></i>
+                    <p class="col">Cerca</p>
+                   </div>
+
+                   <div class="libreria col-12">
+                    <img class="col-12 col" src="./assets/img/html_img/libreria.svg" alt="library">
+                    <p class="col">La tua libreria</p>
+                   </div>
+
+                   <p class="playlist col-12">PLAYLIST</p>
+
+                   <div class="playlist col-12 d-flex flex-row">
+                    <img class="col" src="./assets/img/html_img/add.png" alt="add_img">
+                    <p class="col">crea playlist</p>
+                   </div>
+
+                   <ul class="ul_new_playlist col-12">
+                        <li>nome playlist</li>
+                        <li>nome playlist</li>
+                        <li>nome playlist</li>
+                        <li>nome playlist</li>
+                        <li>nome playlist</li>
+                        <li>nome playlist</li>
+                        <li>nome playlist</li>
+                   </ul>
+
+                </div>
+                <div class="main_sidebar_bottom d-flex flex-column">  
+                    
+                    <div class="main_sidebar_bottom_top d-flex flex-row justify-content-start ">
+                        <img src="./assets/img/html_img/arrow-down.png" alt="downward_arrow_img">
+                        <p>Installa app</p>
+                    </div>
+
+                    <div class="main_sidebar_bottom_bottom d-flex flex-row justify-content-start">
+                        <img src="./assets/img/html_img/profile.png" alt="profile_img">
+                        <p>John Doe</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--sidebar ends here-->
+
+        <section id="main_body" class="col-xs-10_8 col-s-7_5 col-md-9 col-lg-10">
+            <div class="main_body_top">
+                <div class="container"> <!--upgrade p-->
+                    <div class="row flex-row justify-content-end align-items-center">
+                        <p>effettua l'upgrade</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_body_bottom">
+
+                <div class="container"> <!--nav-->
+                    <nav class=" d-flex flex-row flex-wrap">
+                        <a class="col-xs-3 col-s-4 col-md-20 col-lg-2" href="#">in evidenza</a>
+                        <a class="col-xs-3 col-s-4 col-md-20 col-lg-2" href="#">podcast</a>
+                        <a class="col-xs-3 col-s-4 col-md-20 col-lg-2" href="#">classifiche</a>
+                        <a class="col-xs-3 col-s-4 col-md-20 col-lg-2" href="#">generi e mood</a>
+                        <a class="col-xs-6 col-s-4 col-md-20 col-lg-2" href="#">nuove uscite</a>
+                        <a class="col-xs-6 col-s-4 col-md-12 col-lg-2" href="#">scopri</a>
+                    </nav>
+                </div>
+
+                <div class="container"> <!--cards * 6-->
+                    <h5>Recently played</h5>
+                    <div class="row flex-wrap">
+                        <div class="col-xs-6 col-s-6 col-md-3 col-lg-2">
+                            <div class="card">
+                                <div id="card_img_wrapper" style="position: relative;">
+                                    <img src="./assets/img/html_img/metal_lifting.jpg" alt="heavy metal">
+                                    <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                                </div>
+                                <p class="card_writing_top">
+                                    Heavy Metal
+                                </p>
+                                <p class="card_writing_bottom">
+                                    Subtitle
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-s-6 col-md-3 col-lg-2">
+                            <div class="card">
+                                <div  id="card_img_wrapper" style="position: relative;">
+                                    <img src="./assets/img/html_img/stranger.jpeg" alt="stranger things">
+                                    <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                                </div>
+                                <p class="card_writing_top">
+                                    Stranger Things, Vol. 1(a Netflix Original Series Soundtrack)
+                                </p>
+                                <p class="card_writing_bottom">
+                                    Kyle Dixon & Micheal Stein
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-s-6 col-md-3 col-lg-2">
+                            <div class="card">
+                                <div  id="card_img_wrapper" style="position: relative;">
+                                    <img src="./assets/img/html_img/aquietplace.jpeg" alt="A quiet place">
+                                    <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                                </div>
+                                <p class="card_writing_top">
+                                    A quiet place
+                                </p>
+                                <p class="card_writing_bottom">
+                                    Subtitle
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-s-6 col-md-3 col-lg-2">
+                            <div class="card">
+                                <div  id="card_img_wrapper" style="position: relative;">
+                                    <img src="./assets/img/html_img/split.jpeg" alt="heavy metal">
+                                    <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                                </div>
+                                <p class="card_writing_top">
+                                    Split
+                                </p>
+                                <p class="card_writing_bottom">
+                                    Subtitle
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-s-6 col-md-3 col-lg-2">
+                            <div class="card">
+                                <div  id="card_img_wrapper" style="position: relative;" >
+                                    <img src="./assets/img/html_img/cure.jpeg" alt="A cure for wellness">
+                                    <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                                </div>
+                                <p class="card_writing_top">
+                                    A cure for wellness
+                                </p>
+                                <p class="card_writing_bottom">
+                                    Subtitle
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-s-6 col-md-3 col-lg-2">
+                            <div class="card">
+                                <div  id="card_img_wrapper" style="position: relative;" >
+                                    <img src="./assets/img/html_img/sinister.jpeg" alt="Sinister">
+                                    <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                                </div>
+                                <p class="card_writing_top">
+                                    Sinister
+                                </p>
+                                <p class="card_writing_bottom">
+                                    Subtitle
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container"> <!--cards * 2-->
+                    <h5>Creato per John Doe</h5>
+                    <h6>Più ascolti, più accurati saranno i suggerimenti.</h6>
+                    <div class="row flex-wrap">
+                        <div class="col-xs-6 col-s-6 col-md-3 col-lg-2">
+                            <div class="card">
+                                <div  id="card_img_wrapper" style="position: relative;" >
+                                    <img src="./assets/img/html_img/radar.jpeg" alt="Release radar">
+                                    <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                                </div>
+                                <p class="card_writing_top">
+                                    Release Radar
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-s-6 col-md-3 col-lg-2">
+                            <div class="card">
+                                <div  id="card_img_wrapper" style="position: relative;" >
+                                    <img src="./assets/img/html_img/mixdaily.jpeg" alt="Daily Mix">
+                                    <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                                </div>
+                                <p class="card_writing_top">
+                                    Daily Mix 1
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="container"> <!--cards * 2-->
+                    <h5>Artisti più popolari</h5>
+                    <h6>Più ascolti, più accurati saranno i suggerimenti.</h6>
+                    <div class="row flex-wrap">
+                        <div class="col-xs-6 col-s-6 col-md-3 col-lg-2">
+                            <div class="card">
+                                <div  id="card_img_wrapper" style="position: relative;" >
+                                    <img style="border-radius: 50%;" src="./assets/img/html_img/youg.jpeg" alt="Youg">
+                                    <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                                </div>
+                                <p class="card_writing_top">
+                                   Youg
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-s-6 col-md-3 col-lg-2">
+                            <div class="card">
+                                <div  id="card_img_wrapper" style="position: relative;" >
+                                    <img style="border-radius: 50%;" src="./assets/img/html_img/einaudi.jpeg" alt="einaudi">
+                                    <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                                </div>
+                                <p class="card_writing_top">
+                                    Einaudi
+                                </p>
+                               </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- /#site_main -->
+    <footer id="site_footer">
+        <div class="container  d-flex align-items-center justify-content-between">
+
+       <div class="footer_left col-4 col-md-3 col-xxl-3 d-flex flex-row justify-content-start">
+            <div class="footer_left_sx d-flex">
+                <img src="./assets/img/html_img/sinister.jpeg" alt="">
+                <div class="footer_left_sx_writings d-flex flex-column  justify-content-center max_height">
+                    <p>Sinister</p>
+                    <p>Brano Nome</p>
+                </div>
+            </div>
+            <div class="footer_left_dx col-lg-3 d-flex flex-column max_height">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
+            </div>
+        </div>
+
+       <div class="footer_center col-4 col-md-4 col-lg-5 col-xxl-4 d-flex flex-column justify-content-center align-items-center max_height">
+            <div class="footer_center_top col-12  d-flex justify-content-evenly  ">
+                <i class="fa-solid fa-shuffle" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-backward-step" style="color: #ffffff;"></i>
+                <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-forward-step" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-arrow-rotate-right" style="color: #ffffff;"></i>
+            </div>
+            <div class="footer_center_bottom d-flex justify-content-evenly">
+                <p class="col-xs-3 col-md-1_5 col-lg-1_5" >0.25</p>
+                <div class="col-xs-6 col-md-9 col-lg-9 footer_center_img_wrapper" style="position: relative;">
+                    <img id="normal_bar" src="./assets/img/html_img/normal_bar.jpg" alt="loading_bar">
+                    <img id="hover_bar" src="./assets/img/html_img/hover_bar.jpg" alt="hover_bar">
+                </div>
+                <p class="col-xs-3 col-md-1_5 col-lg-1_5" >4.35</p>
+            </div>
+       </div>
+
+       <div class="footer_right col-4 col-md-3 col-s-3 col-lg-3 col-xxl-2 d-flex flex-row justify-content-end ">
+        <i class="col-xs-2 fa-solid fa-bars" style="color: #ffffff;"></i>
+        <i class="col-xs-2 fa-solid fa-display" style="color: #ffffff;"></i>
+        <i class="col-xs-2 fa-solid fa-volume-high " style="color: #ffffff;"></i>
+        <div class="col-xs-6 footer_right_img_wrapper" style="position: relative;" >
+            <img id="normal_bar" src="./assets/img/html_img/normal_bar.jpg" alt="loading_bar">
+            <img id="hover_bar" src="./assets/img/html_img/hover_bar.jpg" alt="hover_bar">
+        </div>
+       </div>
+        </div> <!--container closes here-->
+    </footer>
+    <!-- /#site_footer -->
+    
+</body>
+</html>
